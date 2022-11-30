@@ -1,5 +1,6 @@
 package com.mysql.crud.demo.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,11 +12,22 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Integer id;
+	
+	@Column(name="User_Name")
 	String userName;
+	
+	@Column(name="Email")
 	String email;
+	
+	@Column(name="Phone_Number")
 	String phoneNumber;
+	
+	@Column(name="Role_Id")
 	Integer roleId;
+	
+	@Column(name="isActive")
 	Integer isActive;
+	
 	public Integer getId() {
 		return id;
 	}

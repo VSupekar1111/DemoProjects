@@ -24,7 +24,7 @@ public class UserService {
 		return userRepository.findAll();
 	}
 
-	public Optional<User> getMovieById(Integer id) {
+	public Optional<User> getUserById(int id) {
 		return userRepository.findById(id);
 	}
 
